@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            text-transform: uppercase;
+            color: blue;
+            background-color: greenyellow;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-top: 2px;
+        }
+
+        .item-name {
+            color: blue;
+        }
+
+        table {
+            background-color: yellow;
+            padding: 5px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Đăng ký học viên</h1>
+    </div>
+    <form action="#" method="get">
+        <table>
+            <tr>
+                <td class="item-name">Họ và tên</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Ngày sinh</td>
+                <td>
+                    <input type="text" name="dayofbirdth">
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Nam
+                    <input type="radio" name="gender" value="female">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Địa chỉ</td>
+                <td>
+                    <textarea name="address" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Lớp</td>
+                <td>
+                    <select name="class">
+                        <option value="">-- Chọn lớp --</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Email</td>
+                <td>
+                    <input type="text" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="item-name">Điện thoại</td>
+                <td>
+                    <input type="text" name="phonenumber">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submitbtn" value="Đăng ký">
+                    <input type="reset" name="resetbtn" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
